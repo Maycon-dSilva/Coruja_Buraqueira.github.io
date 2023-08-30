@@ -1,0 +1,66 @@
+/*Block*/
+body {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas: "option-bar option-bar" "nav-bar principal" "footer footer";
+  margin: 0;
+}
+
+header {
+  grid-area: option-bar;
+  display: flex;
+  flex-flow: row;
+  justify-content: end;
+  background-color: #038C3E;
+}
+
+nav {
+  grid-area: nav-bar;
+  width: auto;
+  height: auto;
+  padding: 10px 0 10px;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #038C3E;
+  border-right: 2px solid #D9B504;
+}
+
+main {
+  grid-area: principal;
+  margin: 15px 0 15px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+/*#l-about {}*/
+.l-about__content {
+  max-width: 500px;
+  padding: 0 15px 0 15px;
+  margin-bottom: 30px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #025920;
+}
+
+/*Element*/
+.l-nav__item {
+  color: #F1F1F1;
+  text-decoration: none;
+  text-align: center;
+  transform: rotate(-90deg);
+}
+
+.about__content-title {
+  color: red;
+  font-family: "Bodoni Moda", serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*Modifier*/
+
+/*# sourceMappingURL=indexcss.map */
