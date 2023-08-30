@@ -51,6 +51,20 @@ footer {
     padding-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    body {
+        grid-template-columns: 60px auto;
+    }
+    
+    .about__content-title {
+        font-size: 15px;
+    }
+
+    .about__content-description {
+        font-size: 14px;
+    }
+}
+
 /*Element*/
 
 .fa-brands, .fa-solid {
